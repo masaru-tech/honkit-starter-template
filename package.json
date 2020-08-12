@@ -1,0 +1,27 @@
+{
+  "name": "my-honkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "honkit": "^3.6.0"
+  },
+  "devDependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-footnote-string-to-number": "0.0.2",
+    "gitbook-plugin-hide-published-with": "0.0.1",
+    "gitbook-plugin-image-captions": "^3.1.0",
+    "gitbook-plugin-lb2br": "0.0.5",
+    "gitbook-plugin-plantuml-cloud": "^1.0.2",
+    "gitbook-plugin-sharing": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "honkit init",
+    "build": "honkit build",
+    "serve": "honkit serve",
+    "install": "honkit install"
+  },
+  "author": "",
+  "license": "ISC"
+}

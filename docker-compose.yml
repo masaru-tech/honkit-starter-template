@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  plantuml:
+    image: 'bitjourney/plantuml-service:1.3.5'
+
+  honkit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/honkit
+      - node_modules:/honkit/node_modules
+    ports:
+      - 4000:4000
+      - 35729:35729
+    depends_on:
+      - plantuml
+    command: 'npm run serve'
+
+volumes:
+  plugins:
+
+volumes:
+  node_modules:

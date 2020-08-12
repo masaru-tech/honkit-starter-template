@@ -1,0 +1,16 @@
+version: '4'
+
+compose:
+  files:
+    - docker-compose.yml
+
+interaction:
+  npm:
+    description: Run npm command
+    service: honkit
+    command: npm
+  honkit:
+    description: honkit
+    service: honkit
+    command: npm run serve
+    compose_run_options: [service-ports]
